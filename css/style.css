@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+}
+
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  border-right: none;
+  background-color: #afafaf;
+  width: 30%;
+}
+
+@media only screen and (max-width: 550px) {
+  .tab {
+    width: 100%;
+  }
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 10px 6px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 850px) {
+  .tab button {
+    font-size: 13px;
+  }
+}
+
+.tab button:hover {
+  background-color: lightgray;
+}
+
+.tab button.active {
+  background-color: white;
+}
+
+.tabcontent {
+  float: left;
+  width: 70%;
+  padding: 5px;
+  border-left: 1px solid darkgray;
+  height: min-content;
+  animation: 1.5s fadeIn;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 550px) {
+  .tabcontent {
+    font-size: 13px;
+    width: 100%;
+    border: none;
+  }
+}
+
+.profileimg {
+  height: 150px;
+  width: auto;
+  padding: 5px 5px 5px 5px;
+  margin: 0px 5px;
+  float: left;
+  -moz-box-shadow: 0 0 5px black;
+  -webkit-box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px black;
+}
